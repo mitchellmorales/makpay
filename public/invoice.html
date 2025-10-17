@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invoice Details</title>
+    <link rel="stylesheet" href="invoice.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- PWA and Favicon Configuration -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <meta name="theme-color" content="#111317">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="page-container">
+        <header>
+            <div class="logo">MakPay.</div>
+            <nav>
+                <a href="#">Dashboard</a>
+                <a href="#" class="active">Invoices</a>
+                <a href="#">Wallet</a>
+                <a href="#">Activity</a>
+                <a href="#">Help</a>
+            </nav>
+            <div class="user-actions">
+                <div class="icon-button"></div>
+                <div class="icon-button"></div>
+                <div class="user-profile"></div>
+            </div>
+        </header>
+
+        <main>
+            <div class="invoice-header">
+                <h2>Invoices / edit invoice (INV-XXXX-XXX)</h2>
+                <div class="manage-invoice-dropdown">Manage Invoice &or;</div>
+            </div>
+
+            <div class="content-wrapper">
+                <div class="invoice-details-left">
+                    <div class="card from-details">
+                        <div class="logo-circle">D</div>
+                        <div>
+                            <h3>Dipa Inhouse</h3>
+                            <p>hello@dipainhouse.com</p>
+                        </div>
+                        <div class="address">
+                            <p>Ijen Boulevard Street 101</p>
+                            <p>Malang City, 65115</p>
+                            <p>East Java, Indonesia</p>
+                        </div>
+                    </div>
+
+                    <div class="card invoice-summary">
+                        <div>
+                            <p>Invoice Number</p>
+                            <h3>INV-XXXX-XXX</h3>
+                        </div>
+                        <div>
+                            <p>Issued Date</p>
+                            <h3>XX Jan XXXX</h3>
+                        </div>
+                        <div>
+                            <p>Due Date</p>
+                            <h3>XX Jan XXXX</h3>
+                        </div>
+                        <div class="billed-to">
+                            <p>Billed to</p>
+                            <h3>Zaky Grizzly</h3>
+                            <p>Monlight Agency LTD</p>
+                            <p>New York, USA</p>
+                        </div>
+                    </div>
+
+                    <div class="item-details">
+                        <h4>Item Detail</h4>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Item Name</th>
+                                    <th>Hours</th>
+                                    <th>Rate/hr</th>
+                                    <th>Tax</th>
+                                    <th>Line Total</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Payment Project - Monlight Mobile Design</td>
+                                    <td>XX</td>
+                                    <td>$ XX.XX</td>
+                                    <td>$ X.XX</td>
+                                    <td>$ X,XXX.XX</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="payment-summary">
+                        <div class="payment-method">
+                            <h4>Payment Method</h4>
+                            <p>Wire Transfer</p>
+                            <p>Account Name: <strong>John Doe</strong></p>
+                            <p>Account Number: <strong>XXXX XXXX XXXX XXXX</strong></p>
+                            <p>Routing Number: <strong>XXXXXXXXX</strong></p>
+                        </div>
+                        <div class="totals">
+                            <p><span>Sub Total</span> <span>$X,XXX.XX</span></p>
+                            <p><span>Discount</span> <span>$XX.XX</span></p>
+                            <p><span>Total tax</span> <span>$XX.XX</span></p>
+                            <p class="total-amount"><span>Total Amount</span> <span>$X,XXX.XX</span></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="invoice-actions-right">
+                    <div class="card amount-due">
+                        <h4>Amount Due (USD)</h4>
+                        <div class="amount">$X,XXX.XX <span class="tax-info">(Tax Incl.)</span></div>
+                        <div class="due-date-tag">Due on XX Jan, XXXX</div>
+                    </div>
+                    <a href="payment.html" class="pay-button">Make Card Payment</a>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
